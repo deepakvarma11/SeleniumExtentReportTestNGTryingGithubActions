@@ -12,8 +12,9 @@ on:
   workflow_dispatch:  # Manually triggered workflow
 
 permissions:
-  contents: read
+  contents: write # We generate static HTML, JS, CSS so we need write access to the repo
   pages: write
+  id-token: write
 
 jobs:
   build:
