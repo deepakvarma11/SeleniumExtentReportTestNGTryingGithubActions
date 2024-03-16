@@ -11,6 +11,10 @@ name: Java CI with Maven
 on:
   workflow_dispatch:  # Manually triggered workflow
 
+permissions:
+  contents: read
+  pages: write
+
 jobs:
   build:
 
