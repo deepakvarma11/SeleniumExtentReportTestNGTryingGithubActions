@@ -48,6 +48,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>TestNG.xml</suiteXmlFile>
+                        <suiteXmlFile>TestNGTestSelenium.xml</suiteXmlFile>
                     </suiteXmlFiles>
 <!--                    <includes>-->
 <!--                        <include>**/**Test.java</include>-->
