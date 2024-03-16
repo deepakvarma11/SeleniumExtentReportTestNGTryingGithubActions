@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Publish reports to Pages
 
 on:
   workflow_dispatch:  # Manually triggered workflow
@@ -53,7 +53,7 @@ jobs:
         mv target/extentReport/Spark.html .
         git add ./Spark.html
         git commit -m "Update Extent Report"
-        git push --set-upstream origin gh-pages
+        git push -f --set-upstream origin gh-pages
       env:
        GH_TOKEN: ${{ secrets.MYTOKEN }}
        GIT_COMMITTER_NAME: github-actions
