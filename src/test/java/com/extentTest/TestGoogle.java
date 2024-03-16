@@ -20,10 +20,11 @@ public class TestGoogle extends TestBase{
     @BeforeMethod
     public void start(){
          driver = new ChromeDriver();
+        System.out.println("Chrome started");
     }
 
     @Test
-    public void test01(){
+    public void googleTest(){
         driver.get("https://www.google.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.findElement(By.name("q")).sendKeys("deepak varma", Keys.ENTER);
@@ -34,5 +35,6 @@ public class TestGoogle extends TestBase{
     @AfterMethod
     public void finish(){
         driver.quit();
+        System.out.println("Chrome quit");
     }
 }

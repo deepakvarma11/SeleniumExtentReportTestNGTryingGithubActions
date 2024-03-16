@@ -8,7 +8,7 @@
 
     <test thread-count="1" name="Test">
         <classes>
-            <class name="com.extentTest.GoogleTest" />
+            <class name="com.extentTest.TestPractise" />
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
