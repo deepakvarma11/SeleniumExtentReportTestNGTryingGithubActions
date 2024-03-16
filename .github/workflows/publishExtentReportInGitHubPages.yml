@@ -48,4 +48,8 @@ jobs:
         mv target/extentReport/Spark.html .
         git add ./Spark.html
         git commit -m "Update Extent Report"
-        git push -f https://${{ secrets.MYTOKEN }}@github.com/${{ github.repository }}.git gh-pages
+        git push --set-upstream origin gh-pages
+      env:
+       GH_TOKEN: ${{ secrets.MYTOKEN }}
+       GIT_COMMITTER_NAME: github-actions
+       GIT_COMMITTER_EMAIL: github-actions@github.com
