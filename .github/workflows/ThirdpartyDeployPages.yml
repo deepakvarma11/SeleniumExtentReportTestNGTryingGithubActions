@@ -7,7 +7,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Third Party deploy pages
 
 on:
   workflow_dispatch:  # Manually triggered workflow
